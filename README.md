@@ -14,19 +14,19 @@ How to run unit test with Maven
 $ mvn test
 
 # Run a single test class.
-$ mvn -Dtest=TestApp1 test
+$ mvn -Dtest=CalculatorTest test
 
 # Run multiple test classes.
-$ mvn -Dtest=TestApp1,TestApp2 test
+$ mvn -Dtest=CalculatorTest,AppTest test
 
 # Run a single test method from a test class.
-$ mvn -Dtest=TestApp1#methodname test
+$ mvn -Dtest=CalculatorTest#addTestMethod test
 
 # Run all test methods that match pattern 'testHello*' from a test class.
-$ mvn -Dtest=TestApp1#testHello* test
+$ mvn -Dtest=CalculatorTest#testHello* test
 
 # Run all test methods match pattern 'testHello*' and 'testMagic*' from a test class.
-$ mvn -Dtest=TestApp1#testHello*+testMagic* test
+$ mvn -Dtest=CalculatorTest#testHello*+testMagic* test
 ```
 
 
