@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gl</groupId>
-    <artifactId>my-junit-app</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>unit-testing</artifactId>
+    <version>1.0</version>
 
-    <name>my-junit-app</name>
+    <name>unit-testing</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
