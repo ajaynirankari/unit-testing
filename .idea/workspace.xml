@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1bbb552-bd08-4459-a6fc-6ccc67917843" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="2428fb14-de63-4000-b4c8-4168c44af083" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gl/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gl/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.gl.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.gl.CalculatorTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.gl.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.gl.CalculatorTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gl/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gl/CalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gl/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gl/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gl/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gl/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gl/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gl/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +26,7 @@
   "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2YkQcq66yPx8uoDytW23c2OWAGM" />
+  <component name="ProjectId" id="2YnHG5ArvMGauz2x7SRjXk5QUEl" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -50,36 +40,14 @@
     "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gl" />
-      <option name="MAIN_CLASS_NAME" value="com.gl.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CalculatorTest" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1bbb552-bd08-4459-a6fc-6ccc67917843" name="Changes" comment="" />
-      <created>1701067182275</created>
+      <changelist id="2428fb14-de63-4000-b4c8-4168c44af083" name="Changes" comment="" />
+      <created>1701154328928</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701067182275</updated>
+      <updated>1701154328928</updated>
     </task>
     <servers />
   </component>
