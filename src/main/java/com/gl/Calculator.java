@@ -2,6 +2,15 @@ package com.gl;
 
 public class Calculator {
 
+    public int powerOf2(int a) {
+        int p = 2;
+        for (int i = 1; i < a; i++) {
+            p = p * 2;
+        }
+        //return Math.pow(2,a);
+        return p;
+    }
+
     public int add(int x, int y) {
         System.out.println("x = " + x + ", y = " + y);
         return x + y;
