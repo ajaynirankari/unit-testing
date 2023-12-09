@@ -37,4 +37,8 @@ public class Calculator {
 
         return x / y;
     }
+
+    void delete(int x, int y) {
+        System.out.println("clear x = " + x + ", y= " + y);
+    }
 }

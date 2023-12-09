@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2428fb14-de63-4000-b4c8-4168c44af083" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gl/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gl/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/gl/MockitoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gl/MockitoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +61,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockitoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MockitoTest.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +71,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.gl" />
       <option name="MAIN_CLASS_NAME" value="com.gl.MockitoTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="test0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockitoTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MockitoTest.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing" />
       <extension name="coverage">
         <pattern>
@@ -102,13 +103,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.gl" />
       <option name="MAIN_CLASS_NAME" value="com.gl.MockitoTest" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="METHOD_NAME" value="test8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockitoTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MockitoTest.testServiceA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +119,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.gl" />
       <option name="MAIN_CLASS_NAME" value="com.gl.MockitoTest" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="METHOD_NAME" value="testServiceA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,9 +129,9 @@
       <list>
         <item itemvalue="JUnit.MockitoTest" />
         <item itemvalue="JUnit.MockitoTest.test2" />
-        <item itemvalue="JUnit.MockitoTest.test4" />
-        <item itemvalue="JUnit.MockitoTest.test3" />
-        <item itemvalue="JUnit.MockitoTest.test" />
+        <item itemvalue="JUnit.MockitoTest.test0" />
+        <item itemvalue="JUnit.MockitoTest.test8" />
+        <item itemvalue="JUnit.MockitoTest.testServiceA" />
       </list>
     </recent_temporary>
   </component>
@@ -144,5 +145,16 @@
       <updated>1701154328928</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/gl/MockitoTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

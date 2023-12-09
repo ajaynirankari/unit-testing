@@ -1,9 +1,15 @@
 package com.gl;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
@@ -16,32 +22,101 @@ import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+@ExtendWith(MockitoExtension.class)
 public class MockitoTest {
 
-    Calculator mockedCalculator_ = mock(Calculator.class);
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
 
     @Mock
-    Calculator mockedCalculator;
-
-    @InjectMocks
-    Calculator injectMockedCalculator;
+    Calculator calculatorMockObject;
 
     @Spy
-    Calculator spyMockedCalculator;
+    Calculator calculatorSpyMockObject;
+
+    @InjectMocks
+    ServiceA serviceAInjectMockObject;
+
+    @Mock
+    ServiceB serviceBMockObject;
+
+    @Captor
+    ArgumentCaptor<Integer> firstArgumentCaptor;
+
+    @Captor
+    ArgumentCaptor<Integer> secondArgumentCaptor;
+
+    @Test
+    void test9() {
+        Calculator cal = mock(Calculator.class);
+        cal.delete(30, 40);
+        verify(cal).delete(firstArgumentCaptor.capture(), secondArgumentCaptor.capture());
+        assertEquals(30, firstArgumentCaptor.getValue());
+        assertEquals(40, secondArgumentCaptor.getValue());
+    }
+
+    @Test
+    void test8() {
+        Calculator cal = mock(Calculator.class);
+        ArgumentCaptor<Integer> firstArgumentCaptor = ArgumentCaptor.forClass(Integer.class);
+        ArgumentCaptor<Integer> secondArgumentCaptor = ArgumentCaptor.forClass(Integer.class);
+        cal.delete(30, 40);
+        verify(cal).delete(firstArgumentCaptor.capture(), secondArgumentCaptor.capture());
+        assertEquals(30, firstArgumentCaptor.getValue());
+        assertEquals(40, secondArgumentCaptor.getValue());
+    }
+
+    @Test
+    void testServiceA() {
+        int x = 5;
+        doReturn((x + 1) * 10).when(serviceBMockObject).serviceB(x + 1);
+        int actual = serviceAInjectMockObject.serviceA(x);
+        assertEquals(120, actual);
+    }
+
+    @Test
+    void test7() {
+        doReturn(5).when(calculatorSpyMockObject).add(2, 3);
+        int add1 = calculatorSpyMockObject.add(2, 3);
+        assertEquals(5, add1);
+    }
+
+    @Test
+    void test6() {
+        doReturn(5).when(calculatorMockObject).add(2, 3);
+        int add1 = calculatorMockObject.add(2, 3);
+        assertEquals(5, add1);
+    }
+
+    @Test
+    void test5() {
+        //Calculator calculator = Mockito.mock(Calculator.class);
+        Calculator calculatorActual = new Calculator();
+        Calculator calculatorMockObject = mock(Calculator.class);
+        Calculator calculatorSpyObject = spy(calculatorActual);
+
+        int add = calculatorActual.add(2, 3);
+        System.out.println("calculatorActual add = " + add);
+
+        int add1 = calculatorMockObject.add(2, 3);
+        System.out.println("calculatorMockObject add = " + add1);
+
+        int add2 = calculatorSpyObject.add(2, 3);
+        System.out.println("calculatorMockObject add = " + add2);
+
+    }
 
     @Test
     void test4() {
-
         Calculator mockedCalculator = mock(Calculator.class);
-        when(mockedCalculator.division(0, 4)).thenReturn(0);
-        when(mockedCalculator.division(0, 4)).thenThrow(IllegalArgumentException.class);
-        doThrow(IllegalArgumentException.class).when(mockedCalculator).division(0, 4);
         doThrow(new IllegalArgumentException("Not allowed")).when(mockedCalculator).division(0, 4);
-
         assertThrows(IllegalArgumentException.class, () -> mockedCalculator.division(0, 4));
     }
 
@@ -91,11 +166,6 @@ public class MockitoTest {
         mockedList.add(4);
 
         Object o = mockedList.get(23);
-
-        when(mockedList.get(anyInt())).thenReturn(999);
-        when(mockedList.get(0)).thenReturn(2);
-        doReturn(3).when(mockedList).get(1);
-        doReturn(4).when(mockedList).get(2);
         doReturn(999).when(mockedList).get(anyInt());
 
         verify(mockedList).get(anyInt());
@@ -108,7 +178,6 @@ public class MockitoTest {
 
         assertNotNull(mockedList.get(1));
         assertNotNull(mockedList.get(2));
-
     }
 
     @Test
@@ -134,10 +203,7 @@ public class MockitoTest {
     @Test
     void test0() {
 
-        //Calculator calculator = new Calculator();
         Calculator calculator = mock(Calculator.class);
-
-        when(calculator.add(1, 2)).thenReturn(3);
         when(calculator.add(10, 2)).thenReturn(12);
 
         int add = calculator.add(10, 2);
